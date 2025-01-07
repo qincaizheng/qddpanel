@@ -1,0 +1,28 @@
+plugins {
+    id 'net.minecraftforge.gradle' version '2.3-SNAPSHOT'  // 使用 Forge Gradle 插件
+    id 'java'  // 使用 Java 插件
+}
+
+group = 'com.example'
+version = '1.0.0'
+archivesBaseName = 'mysupermod'  // 自定义 MOD 名称
+
+sourceCompatibility = targetCompatibility = '1.8'  // Minecraft 1.12.2 需要 JDK 8
+
+repositories {
+    maven { url 'https://files.minecraftforge.net/maven' }
+    mavenCentral()
+}
+
+dependencies {
+    // 添加 Forge 依赖
+    minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2854'
+    // 其他依赖
+}
+
+task buildJar(type: Jar) {
+    from sourceSets.main.output
+    baseName = archivesBaseName
+    version = project.version
+    classifier = ''
+}
