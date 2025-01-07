@@ -1,5 +1,5 @@
 plugins {
-    id 'net.minecraftforge.gradle' version '2.3-SNAPSHOT'  // 使用 Forge Gradle 插件
+    id 'net.minecraftforge.gradle'  // 使用 Forge Gradle 插件
     id 'java'  // 使用 Java 插件
 }
 
