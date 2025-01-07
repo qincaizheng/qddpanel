@@ -18,6 +18,7 @@ dependencies {
     // 添加 Forge 依赖
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2854'
     // 其他依赖
+    compile fg.deobf('mezz.jei:jei_1.12.2:4.15.0.291')
 }
 
 task buildJar(type: Jar) {
