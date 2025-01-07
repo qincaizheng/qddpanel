@@ -7,7 +7,7 @@ group = 'com.example'
 version = '1.0.0'
 archivesBaseName = 'qddpanel'  // 自定义 MOD 名称
 
-sourceCompatibility = targetCompatibility = '1.8'  // Minecraft 1.12.2 需要 JDK 8
+sourceCompatibility = = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8'  // Minecraft 1.12.2 需要 JDK 8
 
 repositories {
     maven { url 'https://files.minecraftforge.net/maven' }
