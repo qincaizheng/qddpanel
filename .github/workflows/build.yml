@@ -31,7 +31,8 @@ jobs:
           ${{ runner.os }}-gradle-
 
     - name: Build the mod
-      run: ./gradlew build --no-daemon  # 运行 Gradle 构建命令
+      run: | 
+        ./gradlew build   # 运行 Gradle 构建命令
 
     - name: Upload JAR artifact
       uses: actions/upload-artifact@v3
