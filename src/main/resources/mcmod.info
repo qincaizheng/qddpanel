@@ -1,0 +1,19 @@
+{
+  "modid": "qddpanel",
+  "name": "qddpanel",
+  "description": "panel",
+  "version": "1.0.0",
+  "mcversion": "1.12.2",
+  "url": "https://github.com/qincaizheng/qddpanel",
+  "credits": "Created by qdd",
+  "authors": ["qdd"],
+  "screenshots": [],
+  "dependencies": [
+    {
+      "modId": "forge",
+      "mandatory": true,
+      "versionRange": "[14.23.5.2860,)",
+      "side": "COMMON"
+    }
+  ]
+}
