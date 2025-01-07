@@ -1,0 +1,7 @@
+modLoader="javafml"
+loaderVersion="[14.23.5.2860,)"  # 确保与你的 Forge 版本匹配
+license="MIT"
+issueTrackerURL="https://github.com/qincaizheng/qddpanel/issues"
+[dependencies]
+    minecraft="1.12.2"
+    forge="14.23.5.2860"
