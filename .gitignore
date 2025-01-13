@@ -1,18 +1,26 @@
-# Gradle
-.gradle/
-build/
-out/
-
-# IntelliJ IDEA
-.idea/
-
-# Eclipse
+# eclipse
+bin
+*.launch
+.settings
+.metadata
 .classpath
 .project
-.settings/
 
-# Mac OS X
-.DS_Store
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
 
-# Windows
-Thumbs.db
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
+
+# Files from Forge MDK
+forge*changelog.txt
+*mdk.zip

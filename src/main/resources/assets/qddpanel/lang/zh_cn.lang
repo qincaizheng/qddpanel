@@ -1,2 +1,4 @@
-# zh_ch.lang
-qddpanel.example_message=Hello, Minecraft World!
+key.qddpanel.ninjainfo=忍者面板
+key.categories.qddpanel=钱多多的面板
+chat.qddpanel.time=现在时间为：%s。
+container.qddpanel.demo=FML教程示例GUI
