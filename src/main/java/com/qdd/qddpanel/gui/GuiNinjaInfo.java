@@ -1,15 +1,11 @@
 package com.qdd.qddpanel.gui;
 
-import com.qdd.qddpanel.gui.NinjaInfo;
 import com.qdd.qddpanel.QddpanelMod;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.resources.I18n;
-import net.minecraft.init.Items;
-import net.minecraft.inventory.Slot;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -37,7 +33,7 @@ public class GuiNinjaInfo extends GuiContainer {
         GlStateManager.pushMatrix();
         GlStateManager.enableBlend();
         GlStateManager.blendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
-        GLStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
+        GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
         //将自定义背景贴图与Minecraft材质管理器绑定
         this.mc.getTextureManager().bindTexture(TEXTURE);
         //计算相对位置（以背景贴图左上角为(0,0)点）
@@ -46,9 +42,9 @@ public class GuiNinjaInfo extends GuiContainer {
         this.drawTexturedModalRect(offsetX, offsetY, 0, 0, this.xSize, this.ySize);
         //用完了别忘了关掉
         //警告：一定要关！！不然可能会出问题！！
-        GLStateManager.disableBlend();
+        GlStateManager.disableBlend();
         //结束渲染
-        GLStateManager.popMatrix();
+        GlStateManager.popMatrix();
     }
 
     @Override
