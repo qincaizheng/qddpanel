@@ -9,8 +9,12 @@ public class KeyLoader {
 
     public KeyLoader()
     {
-        KeyLoader.ninjainfo = new KeyBinding("key.qddpanel.ninjainfo", Keyboard.KEY_K, "key.categories.qddpanel");
+        KeyLoader.ninjainfo = CreateKey("ninjainfo", Keyboard.KEY_K);
+    }
 
-        ClientRegistry.registerKeyBinding(KeyLoader.ninjainfo);
+    public static KeyBinding CreateKey(String name , int key){
+        KeyBinding keybind = new KeyBinding("key.qddpanel."+name, Keyboard.KEY_K, "key.categories."+name);
+        ClientRegistry.registerKeyBinding(keybind);
+        return keybind;
     }
 }

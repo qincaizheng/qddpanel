@@ -53,7 +53,7 @@ public class GuiNinjaInfo extends GuiContainer {
         this.drawVerticalLine(30, 19, 36, 0xFF000000);
         this.drawHorizontalLine(8, 167, 43, 0xFF000000);
 
-        String title = I18n.format("container.qddpanel.demo");
+        String title = I18n.format("container.qddpanel.title");
         this.fontRenderer.drawString(title, (this.xSize - this.fontRenderer.getStringWidth(title)) / 2, 6, 0x404040);
 
         // ItemStack item = new ItemStack(ItemLoader.goldenEgg);

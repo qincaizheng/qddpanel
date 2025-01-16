@@ -16,7 +16,6 @@ public class CommonProxy
 
     public void init(FMLInitializationEvent event)
     {
-        new EventLoader();
         NetworkRegistry.INSTANCE.registerGuiHandler(QddpanelMod.instance, new GuiElementLoader());
     }
 
